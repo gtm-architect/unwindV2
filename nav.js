@@ -1,27 +1,26 @@
-/* nav.js — for pages/ directory */
+/* nav.js — for all files inside pages/ directory */
 (function () {
+  const BASE = '../';
   const NAV_LINKS = [
-    { href: '../index.html',             label: 'Home' },
-    { href: '../pages/about.html',       label: 'About Us' },
-    { href: '../pages/gtm-offerings.html', label: 'GTM Offerings' },
-    { href: '../pages/ai-offerings.html',  label: 'AI Offerings' },
-    { href: '../pages/resources.html',   label: 'Resources' },
-    { href: '../pages/work-with-us.html', label: 'Work With Us', cta: true },
+    { href: '../index.html',                label: 'Home' },
+    { href: '../pages/about.html',          label: 'About Us' },
+    { href: '../pages/gtm-offerings.html',  label: 'GTM Offerings' },
+    { href: '../pages/ai-offerings.html',   label: 'AI Offerings' },
+    { href: '../pages/resources.html',      label: 'Resources' },
+    { href: '../pages/work-with-us.html',   label: 'Work With Us', cta: true },
   ];
 
   function buildNav() {
-    const currentPath = window.location.pathname.split('/').pop();
+    const currentFile = window.location.pathname.split('/').pop();
     const nav = document.createElement('nav');
     nav.className = 'nav';
     nav.innerHTML = `
       <div class="nav-inner">
         <a href="../index.html" class="nav-logo">unwind<span>GTM</span></a>
         <ul class="nav-links" id="navLinks">
-          ${NAV_LINKS.map(l => `
-            <li><a href="${l.href}" class="${l.cta ? 'nav-cta' : ''} ${currentPath === l.href.split('/').pop() ? 'active' : ''}">${l.label}</a></li>
-          `).join('')}
+          ${NAV_LINKS.map(l => `<li><a href="${l.href}" class="${l.cta ? 'nav-cta' : ''} ${currentFile === l.href.split('/').pop() ? 'active' : ''}">${l.label}</a></li>`).join('')}
         </ul>
-        <div class="nav-hamburger" id="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+        <div class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
           <span></span><span></span><span></span>
         </div>
       </div>
@@ -50,8 +49,8 @@
 
   function initFadeIn() {
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
-    }, { threshold: 0.1 });
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   }
 
