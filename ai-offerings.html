@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Offerings — unwindGTM</title>
+  <meta name="description" content="unwindGTM's AI offerings — Predictive Scoring, AI Agents & Automation, Generative AI for GTM teams. Built for production, not demos.">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <style>
+    .ai-hero {
+      background: linear-gradient(135deg, var(--color-bg-dark) 0%, #0D2456 100%);
+      padding: var(--space-xl) var(--space-md) var(--space-lg);
+      text-align: center;
+    }
+    .ai-hero .hero-title { color: #fff; max-width: 800px; margin: 0 auto 1.25rem; }
+    .ai-hero .hero-subtitle { color: rgba(255,255,255,0.75); margin: 0 auto var(--space-md); }
+    .ai-hero .hero-eyebrow { color: var(--color-accent); }
+
+    .philosophy-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .philosophy-card {
+      background: var(--color-bg-2);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .philosophy-icon { font-size: 1.5rem; flex-shrink: 0; }
+    .philosophy-card strong { display: block; font-weight: 700; margin-bottom: 0.25rem; }
+    .philosophy-card p { color: var(--color-text-muted); font-size: 0.9rem; }
+
+    .ai-engagement-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+    .ai-engagement-card {
+      background: #fff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .ai-engagement-card:first-child { border-color: var(--color-accent); }
+    .ai-price { font-family: var(--font-display); font-size: 1.3rem; font-weight: 800; color: var(--color-primary); }
+    .ai-timeline { font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-text-muted); letter-spacing: 0.08em; }
+
+    @media (max-width: 900px) {
+      .ai-engagement-row { grid-template-columns: repeat(2, 1fr); }
+      .philosophy-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .ai-engagement-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- HERO -->
+    <div class="ai-hero">
+      <p class="hero-eyebrow fade-in">// AI Offerings</p>
+      <h1 class="hero-title fade-in">AI That Works in<br><em style="color:var(--color-accent);">Production —</em> Not Demos.</h1>
+      <p class="hero-subtitle fade-in" style="max-width:680px;">We don't bolt on AI tools for the sake of it. We identify the three to five use cases that will deliver 80% of the value, build and validate them properly, and hand them over with the documentation and training your team needs to maintain them.</p>
+      <div class="cta-row fade-in" style="justify-content:center;">
+        <a href="work-with-us.html" class="btn btn-accent">Get Your AI Readiness Assessment →</a>
+        <a href="work-with-us.html" class="btn btn-outline-white">Book a Free Strategy Call</a>
+      </div>
+    </div>
+
+    <!-- OFFERINGS -->
+    <div class="section">
+
+      <!-- 1 — Predictive Lead Scoring -->
+      <div class="offering-block fade-in">
+        <div>
+          <p class="section-label">01 / Predictive Intelligence</p>
+          <h2 class="offering-title">Predictive Lead Scoring & Opportunity Intelligence</h2>
+          <div class="offering-tag">
+            <span class="tag">Lead Scoring</span>
+            <span class="tag">Churn Prediction</span>
+            <span class="tag">Expansion Signals</span>
+          </div>
+          <p class="offering-hook"><strong>What if your CRM could tell your reps who to call today — and why?</strong></p>
+          <p class="offering-hook">Most teams use lead scoring based on gut instinct and arbitrary point systems. We build machine-learning models trained on your actual win/loss data that identify the accounts most likely to convert, expand, or churn — before your reps figure it out manually.</p>
+          <p style="font-family:var(--font-mono);font-size:0.72rem;color:var(--color-text-light);margin-top:1rem;">Timeline: 5–8 weeks</p>
+        </div>
+        <div>
+          <p style="font-weight:700;margin-bottom:0.75rem;font-size:0.9rem;">What We Deliver:</p>
+          <ul class="deliverable-list">
+            <li>ML-based lead and account scoring model trained on your CRM data</li>
+            <li>Churn prediction model integrated into your CS workflow</li>
+            <li>Expansion revenue prediction model (upsell & cross-sell signals)</li>
+            <li>Opportunity health scoring and risk flagging in your CRM</li>
+            <li>Real-time scoring updates via CRM integrations</li>
+            <li>Rep-facing dashboards with prioritized action lists</li>
+          </ul>
+          <p style="margin-top:1rem;font-size:0.9rem;color:var(--color-text-muted);">Expected outcome: <strong style="color:var(--color-text);">Improve forecast accuracy by 25–40%. Identify expansion revenue before it's at risk.</strong></p>
+        </div>
+      </div>
+
+      <!-- 2 — AI Agents -->
+      <div class="offering-block fade-in">
+        <div>
+          <p class="section-label">02 / Agentic Automation</p>
+          <h2 class="offering-title">AI Agents & Workflow Automation</h2>
+          <div class="offering-tag">
+            <span class="tag">AI Agents</span>
+            <span class="tag">Lead Routing</span>
+            <span class="tag">CRM Automation</span>
+          </div>
+          <p class="offering-hook"><strong>What if your RevOps system could run itself — routing leads, summarizing calls, and updating forecasts without anyone touching it?</strong></p>
+          <p class="offering-hook">Agentic AI isn't science fiction. We've deployed autonomous workflows for lead routing, meeting summarization, personalized outreach, and report generation that free up 15–25 hours per rep per week — in real production environments, not demos.</p>
+          <p style="font-family:var(--font-mono);font-size:0.72rem;color:var(--color-text-light);margin-top:1rem;">Timeline: 6–10 weeks for initial deployment</p>
+        </div>
+        <div>
+          <p style="font-weight:700;margin-bottom:0.75rem;font-size:0.9rem;">What We Deliver:</p>
+          <ul class="deliverable-list">
+            <li>Autonomous lead routing & qualification agents</li>
+            <li>AI-powered meeting summarization & CRM update automation (Gong/Chorus + CRM)</li>
+            <li>Generative playbooks that update in real-time based on win/loss signals</li>
+            <li>AI-driven report generation & board deck automation</li>
+            <li>Custom API & webhook integrations connecting your AI tools to your CRM</li>
+            <li>LLM-powered workflow automation (custom-built for your stack)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3 — Generative AI -->
+      <div class="offering-block fade-in">
+        <div>
+          <p class="section-label">03 / Generative AI</p>
+          <h2 class="offering-title">Generative AI for GTM Teams</h2>
+          <div class="offering-tag">
+            <span class="tag">AI Outreach</span>
+            <span class="tag">Proposal Automation</span>
+            <span class="tag">Content at Scale</span>
+          </div>
+          <p class="offering-hook"><strong>Your reps are writing the same emails, same proposals, same follow-ups — from scratch. Every. Single. Time.</strong></p>
+          <p class="offering-hook">Generative AI, when properly configured on your own data, can produce on-brand outreach, personalized proposals, and content that sounds like your best rep — at scale. Without hallucinations. Without losing the human touch.</p>
+        </div>
+        <div>
+          <p style="font-weight:700;margin-bottom:0.75rem;font-size:0.9rem;">What We Deliver:</p>
+          <ul class="deliverable-list">
+            <li>AI-assisted sales outreach templates trained on your win/loss data</li>
+            <li>Proposal and SOW generation automation</li>
+            <li>Personalized CS success plan drafting</li>
+            <li>AI-powered knowledge-base and self-service portal content generation</li>
+            <li>Internal playbook and enablement content automation</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- PHILOSOPHY -->
+    <div class="section-full section-light">
+      <div class="section-full-inner section">
+        <p class="section-label fade-in">// Our AI Philosophy</p>
+        <h2 class="section-title fade-in">We Build AI That Works in Production — Not Demos.</h2>
+        <p class="section-subtitle fade-in">Our philosophy: AI where it scales, deterministic logic where it governs. We don't bolt on AI tools for the sake of it. We identify the three to five use cases that will deliver 80% of the value, build and validate them properly.</p>
+
+        <div class="philosophy-grid">
+          <div class="philosophy-card fade-in">
+            <div class="philosophy-icon">🔍</div>
+            <div>
+              <strong>We start with your data quality</strong>
+              <p>Because garbage in, garbage out. Before we build any AI model, we assess and clean your data foundation.</p>
+            </div>
+          </div>
+          <div class="philosophy-card fade-in">
+            <div class="philosophy-icon">🏗️</div>
+            <div>
+              <strong>We build iteratively — small wins first, then scale</strong>
+              <p>No big-bang deployments. We prove value in weeks, not months, then expand what's working.</p>
+            </div>
+          </div>
+          <div class="philosophy-card fade-in">
+            <div class="philosophy-icon">📈</div>
+            <div>
+              <strong>We measure AI impact in revenue terms, not tech terms</strong>
+              <p>We don't report on model accuracy. We report on pipeline velocity, win rates, and time saved per rep.</p>
+            </div>
+          </div>
+          <div class="philosophy-card fade-in">
+            <div class="philosophy-icon">🤝</div>
+            <div>
+              <strong>We transfer ownership — you shouldn't need us forever</strong>
+              <p>Every AI system we build, we document, train your team on, and hand back. Dependency is not our model.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ENGAGEMENT OPTIONS -->
+    <div class="section">
+      <p class="section-label fade-in">// Engagement Options</p>
+      <h2 class="section-title fade-in">Start Where You Are</h2>
+      <p class="section-subtitle fade-in">Most clients start with the AI Readiness Assessment and move to a full build within 30 days. There's no obligation — just clarity.</p>
+
+      <div class="ai-engagement-row">
+        <div class="ai-engagement-card fade-in" style="border-color:var(--color-accent);position:relative;">
+          <div style="position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--color-accent);color:#fff;font-size:0.65rem;font-weight:700;letter-spacing:0.1em;padding:0.2rem 0.8rem;border-radius:100px;text-transform:uppercase;white-space:nowrap;">Start Here</div>
+          <div class="ai-timeline">2 weeks</div>
+          <div style="font-weight:700;font-size:1rem;margin-bottom:0.25rem;">AI Readiness Assessment</div>
+          <div class="ai-price">from $3,500</div>
+          <p style="color:var(--color-text-muted);font-size:0.85rem;">A standalone, high-conversion entry point. We assess your data, tools, and use cases to give you a clear AI roadmap. 80% of clients move to a full build within 30 days.</p>
+          <a href="work-with-us.html" class="btn btn-accent" style="margin-top:auto;">Get Started →</a>
+        </div>
+        <div class="ai-engagement-card fade-in">
+          <div class="ai-timeline">5–8 weeks</div>
+          <div style="font-weight:700;font-size:1rem;margin-bottom:0.25rem;">Predictive Scoring Implementation</div>
+          <div class="ai-price">Project-based</div>
+          <p style="color:var(--color-text-muted);font-size:0.85rem;">Full ML-model build for lead, account, and opportunity scoring. Integrated with your CRM and delivered with a training program for your ops team.</p>
+          <a href="work-with-us.html" class="btn btn-outline" style="margin-top:auto;">Discuss Project →</a>
+        </div>
+        <div class="ai-engagement-card fade-in">
+          <div class="ai-timeline">6–10 weeks</div>
+          <div style="font-weight:700;font-size:1rem;margin-bottom:0.25rem;">AI Agents & Automation Build</div>
+          <div class="ai-price">Project-based</div>
+          <p style="color:var(--color-text-muted);font-size:0.85rem;">Custom agentic workflows deployed into your stack. Lead routing, meeting summarization, outreach automation — built to run without human intervention.</p>
+          <a href="work-with-us.html" class="btn btn-outline" style="margin-top:auto;">Discuss Project →</a>
+        </div>
+        <div class="ai-engagement-card fade-in">
+          <div class="ai-timeline">Ongoing</div>
+          <div style="font-weight:700;font-size:1rem;margin-bottom:0.25rem;">AI Add-On to Retainer</div>
+          <div class="ai-price">$2,500<span style="font-size:0.9rem;font-weight:400;color:var(--color-text-muted);">/mo</span></div>
+          <p style="color:var(--color-text-muted);font-size:0.85rem;">Ongoing AI tuning, expansion, and model retraining as your data grows. Ideal for clients already on a RevOps retainer.</p>
+          <a href="work-with-us.html" class="btn btn-outline" style="margin-top:auto;">Add to Retainer →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-section">
+      <h2>Start with the AI Readiness Assessment</h2>
+      <p>80% of clients who complete the assessment move to a full AI build within 30 days. Find out exactly where AI will move the needle in your revenue engine.</p>
+      <div class="cta-row" style="justify-content:center;">
+        <a href="work-with-us.html" class="btn btn-accent">Get Your AI Readiness Assessment →</a>
+      </div>
+    </div>
+
+  </div>
+  <script src="../assets/js/nav.js"></script>
+</body>
+</html>

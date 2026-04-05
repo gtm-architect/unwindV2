@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>unwindGTM — Revenue Operations & GTM Strategy</title>
+  <meta name="description" content="unwindGTM is the Revenue Operations partner for mid-market B2B SaaS companies ($5M–$50M ARR) that want to turn fragmented GTM functions into one predictable revenue engine.">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    /* Hero layout */
+    .home-hero {
+      min-height: calc(100vh - var(--nav-height));
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: var(--space-lg);
+      padding: var(--space-lg) var(--space-md);
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+    @media (max-width: 900px) { .home-hero { grid-template-columns: 1fr; min-height: auto; padding-top: var(--space-md); } }
+
+    /* Testimonial / trust banner */
+    .trust-statement {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-top: var(--space-md);
+    }
+    .trust-dot { width: 8px; height: 8px; background: var(--color-accent); border-radius: 50%; flex-shrink: 0; }
+    .trust-text { font-size: 0.85rem; color: var(--color-text-muted); font-style: italic; }
+
+    /* Engagement numbers */
+    .number-strip {
+      background: var(--color-primary);
+      padding: var(--space-md) var(--space-md);
+    }
+    .number-strip-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-md);
+      text-align: center;
+    }
+    .number-strip .stat-num { color: #fff; }
+    .number-strip .stat-label { color: rgba(255,255,255,0.7); }
+
+    /* Offering preview cards */
+    .offering-preview-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+    .offering-preview-card {
+      background: #fff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-md);
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      transition: all 0.25s;
+    }
+    .offering-preview-card:hover { border-color: var(--color-primary-light); box-shadow: 0 8px 32px rgba(26,86,219,0.12); transform: translateY(-3px); }
+    .offering-preview-icon { font-size: 2rem; }
+    .offering-preview-title { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; }
+    .offering-preview-desc { color: var(--color-text-muted); font-size: 0.88rem; line-height: 1.65; flex: 1; }
+    .offering-preview-link { font-size: 0.85rem; font-weight: 600; color: var(--color-primary); display: flex; align-items: center; gap: 0.3rem; }
+    @media (max-width: 768px) { .offering-preview-grid, .number-strip-inner { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 480px) { .offering-preview-grid, .number-strip-inner { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <!-- ===== HERO ===== -->
+    <div class="home-hero">
+      <div class="home-hero-content fade-in">
+        <p class="hero-eyebrow">// Revenue Operations Partner</p>
+        <h1 class="hero-title">Your GTM is Running.<br>It's Just Not Running <em>Together.</em></h1>
+        <p class="hero-subtitle">You've got the product, the team, and the ambition. But Marketing, Sales, CS, and Delivery are still pulling in different directions — costing you pipeline, revenue, and time you can't afford to lose.</p>
+        <p style="font-size:0.95rem; color:var(--color-text-muted); margin-bottom:var(--space-md); max-width:520px; line-height:1.75;">
+          unwindGTM is the Revenue Operations partner for mid-market B2B SaaS companies ($5M–$50M ARR) that want to turn fragmented GTM functions into one predictable revenue engine.
+        </p>
+        <div class="cta-row">
+          <a href="pages/work-with-us.html" class="btn btn-accent">Get a Free Revenue Audit →</a>
+          <a href="pages/gtm-offerings.html" class="btn btn-outline">Explore Our Offerings</a>
+        </div>
+        <div class="trust-statement">
+          <div class="trust-dot"></div>
+          <p class="trust-text">Built by operators who've led RevOps across Fintech, LegalTech, and B2B SaaS unicorns globally.</p>
+        </div>
+      </div>
+
+      <!-- Hero Visual -->
+      <div class="hero-visual fade-in">
+        <div class="tools-orbit">
+          <div class="orbit-ring orbit-ring-1"></div>
+          <div class="orbit-ring orbit-ring-2"></div>
+          <div class="orbit-hub">Revenue<br>Engine</div>
+
+          <!-- Inner ring nodes -->
+          <div class="tool-node" style="top:8%; left:50%; transform:translate(-50%,-50%)">
+            <span class="icon">📊</span><span>CRM</span>
+          </div>
+          <div class="tool-node" style="top:50%; right:8%; transform:translateY(-50%)">
+            <span class="icon">🎯</span><span>Sales</span>
+          </div>
+          <div class="tool-node" style="bottom:8%; left:50%; transform:translate(-50%,50%)">
+            <span class="icon">🤝</span><span>CS</span>
+          </div>
+          <div class="tool-node" style="top:50%; left:8%; transform:translateY(-50%)">
+            <span class="icon">📣</span><span>Mktg</span>
+          </div>
+
+          <!-- Outer ring nodes -->
+          <div class="tool-node" style="top:5%; left:20%; transform:translate(-50%,-50%)">
+            <span class="icon">⚡</span><span>HubSpot</span>
+          </div>
+          <div class="tool-node" style="top:20%; right:5%; transform:translate(50%,-50%)">
+            <span class="icon">🔮</span><span>Clay</span>
+          </div>
+          <div class="tool-node" style="bottom:20%; right:5%; transform:translate(50%,50%)">
+            <span class="icon">📈</span><span>Gong</span>
+          </div>
+          <div class="tool-node" style="bottom:5%; left:20%; transform:translate(-50%,50%)">
+            <span class="icon">🤖</span><span>AI</span>
+          </div>
+          <div class="tool-node" style="top:5%; right:20%; transform:translate(50%,-50%)">
+            <span class="icon">💰</span><span>RevOps</span>
+          </div>
+          <div class="tool-node" style="bottom:20%; left:5%; transform:translate(-50%,50%)">
+            <span class="icon">📋</span><span>Data</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== TRUST BAR ===== -->
+    <div class="trust-bar">
+      <p><strong>Fintech · LegalTech · B2B SaaS</strong> &nbsp;|&nbsp; Marketing Operations · Sales Operations · CS Operations · Revenue Strategy · AI & Automation</p>
+    </div>
+
+    <!-- ===== NUMBER STRIP ===== -->
+    <div class="number-strip">
+      <div class="number-strip-inner">
+        <div class="stat-box">
+          <span class="stat-num">9</span>
+          <p class="stat-label">RevOps Pillars Covered</p>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">$5M–50M</span>
+          <p class="stat-label">ARR Sweet Spot</p>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">3</span>
+          <p class="stat-label">Founding Operators</p>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">10+</span>
+          <p class="stat-label">Years Combined RevOps Experience</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== PROBLEM WE SOLVE ===== -->
+    <div class="section-full section-light">
+      <div class="section-full-inner section">
+        <p class="section-label fade-in">// The Problem We Solve</p>
+        <h2 class="section-title fade-in">Sound Familiar?</h2>
+        <p class="section-subtitle fade-in">Most companies scaling past $5M ARR hit the same wall. It's not a product problem or a headcount problem. It's an <strong>operations problem</strong>.</p>
+
+        <div class="pain-grid">
+          <div class="pain-card fade-in">
+            <strong>Marketing generates leads. Sales can't follow up fast enough.</strong>
+            <p>No shared definitions, no SLAs, no handoff process — just dropped balls and lost deals.</p>
+          </div>
+          <div class="pain-card fade-in">
+            <strong>Your CRM is a dumping ground, not a source of truth.</strong>
+            <p>Bad data means bad forecasts. And bad forecasts mean bad board conversations.</p>
+          </div>
+          <div class="pain-card fade-in">
+            <strong>Your tools are expensive but underused.</strong>
+            <p>You're paying for HubSpot, Gainsight, and five other platforms — but getting 30% of their value.</p>
+          </div>
+          <div class="pain-card fade-in">
+            <strong>Post-sale is an afterthought — until churn hits.</strong>
+            <p>CS and Delivery are reactive, not proactive. Renewals are stressful. Expansion is accidental.</p>
+          </div>
+          <div class="pain-card fade-in">
+            <strong>You don't need more hires. You need better systems.</strong>
+            <p>A full-time VP of RevOps costs $180K+. You need the output — not the overhead.</p>
+          </div>
+          <div class="pain-card fade-in" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;border-left-color:var(--color-primary);background:var(--color-primary-dim);">
+            <p style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--color-primary);margin-bottom:1rem;">This is exactly what we fix.</p>
+            <a href="pages/work-with-us.html" class="btn btn-primary">Get a Free Revenue Audit →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== HOW UNWINDGTM WORKS ===== -->
+    <div class="section">
+      <p class="section-label fade-in">// How We Work</p>
+      <h2 class="section-title fade-in">One Partner. The Entire Revenue Engine.</h2>
+      <p class="section-subtitle fade-in">We don't plug into one department. We connect all of them. From the first marketing touch to the last implementation handoff — we design, build, and run the systems that make growth predictable.</p>
+
+      <div class="step-flow">
+        <div class="step-card fade-in">
+          <div class="step-num">1</div>
+          <div class="step-title">DIAGNOSE</div>
+          <p class="step-desc">We audit your full GTM stack across all 9 RevOps pillars and show you exactly where revenue is leaking.</p>
+        </div>
+        <div class="step-card fade-in">
+          <div class="step-num">2</div>
+          <div class="step-title">DESIGN & BUILD</div>
+          <p class="step-desc">We redesign the processes, implement the tools, and build the data infrastructure to fix the root causes.</p>
+        </div>
+        <div class="step-card fade-in">
+          <div class="step-num">3</div>
+          <div class="step-title">RUN & OPTIMIZE</div>
+          <p class="step-desc">We stay in as your fractional RevOps layer, continuously improving outcomes as you scale.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== THE 9-PILLAR REVENUE ENGINE ===== -->
+    <div class="section-full section-light">
+      <div class="section-full-inner section">
+        <p class="section-label fade-in">// Our Framework</p>
+        <h2 class="section-title fade-in">The 9-Pillar Revenue Engine</h2>
+        <p class="section-subtitle fade-in">Most agencies stop at 5 pillars. We cover all 9 — because that's what actually moves the needle from lead to cash to expansion.</p>
+
+        <div class="pillar-grid">
+          <div class="pillar-card fade-in">
+            <div class="pillar-icon">🧠</div>
+            <div><div class="pillar-name">Strategy & Revenue Planning</div><div class="pillar-desc">GTM direction, annual planning, buying-group strategy</div></div>
+          </div>
+          <div class="pillar-card fade-in">
+            <div class="pillar-icon">🔄</div>
+            <div><div class="pillar-name">Process</div><div class="pillar-desc">End-to-end lifecycle mapping and optimization</div></div>
+          </div>
+          <div class="pillar-card fade-in">
+            <div class="pillar-icon">📊</div>
+            <div><div class="pillar-name">Data</div><div class="pillar-desc">Governance, quality, modeling, and forecasting</div></div>
+          </div>
+          <div class="pillar-card fade-in">
+            <div class="pillar-icon">🎓</div>
+            <div><div class="pillar-name">Enablement</div><div class="pillar-desc">Training, playbooks, and adoption programs</div></div>
+          </div>
+          <div class="pillar-card fade-in">
+            <div class="pillar-icon">⚙️</div>
+            <div><div class="pillar-name">Systems & Tools</div><div class="pillar-desc">Selection, implementation, integration, automation</div></div>
+          </div>
+          <div class="pillar-card fade-in">
+            <div class="pillar-icon">👥</div>
+            <div><div class="pillar-name">People</div><div class="pillar-desc">Team structure, hiring, performance frameworks</div></div>
+          </div>
+          <div class="pillar-card fade-in">
+            <div class="pillar-icon">💰</div>
+            <div><div class="pillar-name">Finance & Revenue Assurance</div><div class="pillar-desc">Quote-to-Cash, billing, revenue recognition</div></div>
+          </div>
+          <div class="pillar-card fade-in">
+            <div class="pillar-icon">🤖</div>
+            <div><div class="pillar-name">AI & Intelligent Operations</div><div class="pillar-desc">Predictive analytics, generative AI, agentic workflows</div></div>
+          </div>
+          <div class="pillar-card fade-in">
+            <div class="pillar-icon">🛡️</div>
+            <div><div class="pillar-name">Compliance & Partner Ecosystem</div><div class="pillar-desc">Security, audit readiness, partner/channel ops</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== WHAT WE OFFER ===== -->
+    <div class="section">
+      <p class="section-label fade-in">// Our Offerings</p>
+      <h2 class="section-title fade-in">Everything Your Revenue Engine Needs</h2>
+      <p class="section-subtitle fade-in">From GTM strategy to AI-powered automation — we cover the full revenue lifecycle.</p>
+
+      <div class="offering-preview-grid">
+        <a href="pages/gtm-offerings.html" class="offering-preview-card fade-in" style="text-decoration:none;color:inherit;">
+          <div class="offering-preview-icon">📣</div>
+          <div class="offering-preview-title">Marketing Operations</div>
+          <p class="offering-preview-desc">Lifecycle orchestration, attribution modeling, campaign ops, and marketing automation that actually converts pipeline.</p>
+          <span class="offering-preview-link">Explore →</span>
+        </a>
+        <a href="pages/gtm-offerings.html" class="offering-preview-card fade-in" style="text-decoration:none;color:inherit;">
+          <div class="offering-preview-icon">🎯</div>
+          <div class="offering-preview-title">Sales Operations</div>
+          <p class="offering-preview-desc">Pipeline architecture, forecasting, territory design, CRM hygiene, and quota frameworks that close more deals.</p>
+          <span class="offering-preview-link">Explore →</span>
+        </a>
+        <a href="pages/gtm-offerings.html" class="offering-preview-card fade-in" style="text-decoration:none;color:inherit;">
+          <div class="offering-preview-icon">🤝</div>
+          <div class="offering-preview-title">CS & Delivery Operations</div>
+          <p class="offering-preview-desc">Health scoring, QBR design, onboarding frameworks, and expansion playbooks that reduce churn and drive NRR.</p>
+          <span class="offering-preview-link">Explore →</span>
+        </a>
+        <a href="pages/gtm-offerings.html" class="offering-preview-card fade-in" style="text-decoration:none;color:inherit;">
+          <div class="offering-preview-icon">🧠</div>
+          <div class="offering-preview-title">Revenue Strategy & Advisory</div>
+          <p class="offering-preview-desc">GTM motion design, ICP refinement, territory planning, compensation design, and 3-year revenue operating plans.</p>
+          <span class="offering-preview-link">Explore →</span>
+        </a>
+        <a href="pages/ai-offerings.html" class="offering-preview-card fade-in" style="text-decoration:none;color:inherit;">
+          <div class="offering-preview-icon">🤖</div>
+          <div class="offering-preview-title">AI Offerings</div>
+          <p class="offering-preview-desc">Predictive lead scoring, AI agents, workflow automation, and generative AI tools built for production — not demos.</p>
+          <span class="offering-preview-link">Explore →</span>
+        </a>
+        <a href="pages/gtm-offerings.html" class="offering-preview-card fade-in" style="text-decoration:none;color:inherit;">
+          <div class="offering-preview-icon">💰</div>
+          <div class="offering-preview-title">Finance & Revenue Ops</div>
+          <p class="offering-preview-desc">Quote-to-Cash optimization, revenue recognition, FP&A integration, and billing infrastructure that scales.</p>
+          <span class="offering-preview-link">Explore →</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- ===== WHO WE WORK WITH ===== -->
+    <div class="section-full section-dark">
+      <div class="section-full-inner section">
+        <p class="section-label fade-in">// Who We Work With</p>
+        <h2 class="section-title fade-in" style="color:#fff;">Built for Mid-Market B2B SaaS. Not Everyone.</h2>
+        <p class="section-subtitle fade-in" style="color:rgba(255,255,255,0.7);">We specialize. You benefit. Our experience is deep in a specific category so we can move fast and deliver outcomes — not spend time learning your world.</p>
+
+        <div class="grid-3" style="margin-top:var(--space-md);">
+          <div class="card fade-in" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);">
+            <p style="font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.1em;color:var(--color-accent);text-transform:uppercase;margin-bottom:0.75rem;">Company Stage</p>
+            <p style="font-weight:700;font-size:1.1rem;color:#fff;margin-bottom:0.5rem;">$5M – $50M ARR</p>
+            <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;">Series A through Series B. The stage where GTM complexity explodes and the founding team can no longer run it all manually.</p>
+          </div>
+          <div class="card fade-in" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);">
+            <p style="font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.1em;color:var(--color-accent);text-transform:uppercase;margin-bottom:0.75rem;">Industry Focus</p>
+            <p style="font-weight:700;font-size:1.1rem;color:#fff;margin-bottom:0.5rem;">B2B SaaS, Fintech, LegalTech</p>
+            <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;">Sectors where we've lived the problems firsthand — not just read about them in case studies.</p>
+          </div>
+          <div class="card fade-in" style="background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.1);">
+            <p style="font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.1em;color:var(--color-accent);text-transform:uppercase;margin-bottom:0.75rem;">Ideal Situation</p>
+            <p style="font-weight:700;font-size:1.1rem;color:#fff;margin-bottom:0.5rem;">Growing Fast, Ops Lagging Behind</p>
+            <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;">You've hired a sales team but pipeline is inconsistent. Or churn is creeping up despite growth. Or your CRM is a mess. That's us.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== CTA SECTION ===== -->
+    <div class="cta-section">
+      <div style="max-width:640px;margin:0 auto;">
+        <p class="section-label" style="color:var(--color-accent);justify-content:center;display:flex;">// Start Here</p>
+        <h2>Ready to Stop Leaving Revenue on the Table?</h2>
+        <p>Book a free 30-minute strategy call. We'll look at your current GTM setup, identify the biggest leaks, and give you an honest view of what's fixable — and how fast.</p>
+        <div class="cta-row" style="justify-content:center;">
+          <a href="pages/work-with-us.html" class="btn btn-accent">Book a Free Strategy Call →</a>
+          <a href="pages/gtm-offerings.html" class="btn btn-outline-white">See Our Full Offerings</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="assets/js/nav-root.js"></script>
+</body>
+</html>
